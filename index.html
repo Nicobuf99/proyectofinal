@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img2.freepng.es/20180816/auw/kisspng-2-22-fifa-world-cup-2-18-world-cup-qatar-fifa-worl-need-help-with-logo-pesgaming-forums-5b757a4d258c91.9918216615344256771538.jpg"/>
+    <link rel="stylesheet" href="../ProyectoFinal/css/style.css"/>
+    <title> MUNDIAL QATAR 2022</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./fixture.html">Fixture</a></li>
+                <li><a href="./estadios.html">Estadios</a></li>
+                <li><a href="./prediccion.html">Armá tu predicción</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="imagenes">  
+        <img class="logomundial" src="../ProyectoFinal/imagenes/logomundial.img" alt="Logo del Mundial de Qatar 2022 junto con el título del mundial" width="500px"/>
+        <img class="fotocampeon" src="../ProyectoFinal/imagenes/Franciacampeon.img" alt="Equipo de Francia levantando la Copa del Mundo del año 2018" width="500px"/>
+    </section>
+    
+    <main>
+
+        <h1>PARTIDO INAUGURAL: QATAR vs ECUADOR</h1>
+        <h1 id="demo"></h1>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 20, 2022 13:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "YA INICIAMOS!";
+        }
+        }, 1000);
+        </script>
+    
+        <section class="tablas-index">
+            <div>
+                <h2 class="ganadores-titulo">Mayores ganadores</h2>
+                <table class="ganadoresindex" border="4%" cellpadding="4%" cellspacing="4%">
+                    <th>País</th> <th>Cantidad de títulos</th>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Brasil" target="_blank">Brasil</a></td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Italia" target="_blank">Italia</a></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Alemania" target="_blank">Alemania</a></td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Argentina" target="_blank">Argentina</a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Uruguay" target="_blank">Uruguay</a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Francia" target="_blank">Francia</a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Inglaterra" target="_blank">Inglaterra</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Espa%C3%B1a" target="_blank">España</a></td>
+                        <td>1</td>
+                    </tr>
+                    </table>
+            </div>
+
+            <div>
+                <h2 class="goleadores-titulo">Mayores goleadores en la historia</h2>
+                <table class="goleadoresindex" border="4%" cellpadding="4%" cellspacing="4%">
+                    <th>Jugador</th> <th>Cantidad de goles</th>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Miroslav_Klose" target="_blank">Miroslav Klose</a></td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Ronaldo" target="_blank">Ronaldo Nazario</a></td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Gerd_M%C3%BCller" target="_blank">Gerd Müller</a></td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Just_Fontaine" target="_blank">Just Fontaine</a></td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Pel%C3%A9" target="_blank">Pelé</a></td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/J%C3%BCrgen_Klinsmann" target="_blank">Jürgen Klinsmann</a></td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/S%C3%A1ndor_Kocsis" target="_blank">Sándor Kocsis</a></td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://es.wikipedia.org/wiki/Gabriel_Batistuta" target="_blank">Gabriel Batistuta</a></td>
+                        <td>10</td>
+                    </tr>
+                </table>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.youtube.com/c/ASTROfutbol" target="_blank">Youtube</a></li>
+            <li><a href="https://www.instagram.com/mundial2022_/" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/search/top?q=mundial%20qatar" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
